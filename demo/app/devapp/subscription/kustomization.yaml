@@ -3,3 +3,4 @@ resources:
 - channel.yaml
 - placementrule.yaml
 - subscription-nginx-placement.yaml
+- application.yaml
