@@ -7,11 +7,6 @@ metadata:
   name: nginx-app-3
   namespace: ns-sub-1
 spec:
-  componentKinds:
-  - group: apps.open-cluster-management.io
-    kind: Subscription
   selector:
     matchLabels:
       app: nginx-app-details
-status: {}
-
