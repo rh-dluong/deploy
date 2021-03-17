@@ -57,11 +57,11 @@ spec:
     placementRef:
       kind: PlacementRule
       name: towhichcluster
-  overrides:
-  - clusterName: "/"
-    clusterOverrides:
-    - path: "metadata.namespace"
-      value: default
+#  overrides:
+#  - clusterName: "/"
+#    clusterOverrides:
+#    - path: "metadata.namespace"
+#      value: default
   
 ###### PlacementRule yaml definition
 ---
