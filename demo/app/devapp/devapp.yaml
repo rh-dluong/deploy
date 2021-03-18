@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-app-details 
+  labels:
+    app: nginx-app-details
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx-app-details
+  template:
+    metadata:
+      labels:
+        app: nginx-app-details
+    spec:
+      containers:
+      - name: nginx
+        image: quay.io/jpacker/nginx:1.16.1
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
+
